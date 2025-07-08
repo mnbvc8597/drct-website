@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRCT - Dhandapani Rural Charitable Trust</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>DHANDAPANI RURAL CHARITABLE TRUST</h1>
+                <p>Empowering Rural Communities Since 1992</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#schemes">Schemes</a></li>
+                    <li><a href="#faculty">Faculty</a></li>
+                    <li><a href="#success">Success Stories</a></li>
+                    <li><a href="#announcements">Announcements</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Empowering Rural Youth Through Skill Development</h1>
+                <p>Transforming lives through education and vocational training</p>
+                <a href="#registration" class="btn">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>Established in 1992, DRCT is a non-profit organization dedicated to empowering rural women through education and skills training. Since 2014-15, DRCT has been actively involved in government-sponsored skill development programs including:</p>
+                <ul>
+                    <li>STAR</li>
+                    <li>NDLM</li>
+                    <li>PMKVY</li>
+                    <li>AICTE</li>
+                    <li>TNSDC</li>
+                    <li>NULM</li>
+                    <li>DDUGKY</li>
+                </ul>
+                <p>Recognized as a Skill Hub, DRCT provides industry-relevant training to underprivileged youth to enhance their employability and entrepreneurial potential. DRCT has demonstrated a proven track record under DDU-GKY, achieving a 75% placement rate, significantly contributing to the socio-economic upliftment of rural communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schemes Section -->
+    <section id="schemes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Schemes</h2>
+            <div class="schemes-grid">
+                <div class="scheme-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>STAR Scheme</h3>
+                    <p>Standard Training Assessment and Reward scheme for skill development</p>
+                </div>
+                <div class="scheme-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>NDLM</h3>
+                    <p>National Digital Literacy Mission for digital empowerment</p>
+                </div>
+                <div class="scheme-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>PMKVY</h3>
+                    <p>Pradhan Mantri Kaushal Vikas Yojana for industry-relevant training</p>
+                </div>
+                <div class="scheme-card">
+                    <i class="fas fa-building"></i>
+                    <h3>DDUGKY</h3>
+                    <p>Deen Dayal Upadhyaya Grameen Kaushalya Yojana for rural youth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Faculty</h2>
+            <div class="faculty-grid">
+                <!-- Faculty members will be loaded dynamically from MongoDB -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="stories-grid">
+                <!-- Success stories will be loaded dynamically from MongoDB -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section id="announcements" class="section">
+        <div class="container">
+            <h2 class="section-title">Announcements</h2>
+            <div class="announcements-list">
+                <!-- Announcements will be loaded dynamically from MongoDB -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Gallery images will be loaded dynamically from MongoDB -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section">
+        <div class="container">
+            <h2 class="section-title">Registration</h2>
+            <form id="registrationForm" class="form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select id="scheme" required>
+                        <option value="">Select Scheme</option>
+                        <option value="STAR">STAR</option>
+                        <option value="NDLM">NDLM</option>
+                        <option value="PMKVY">PMKVY</option>
+                        <option value="DDUGKY">DDUGKY</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Trust Street, Rural District, Tamil Nadu 600001</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@drct.org</p>
+                    </div>
+                </div>
+                <form id="contactForm" class="form">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About DRCT</h3>
+                    <p>Empowering rural communities through education and skill development since 1992.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#schemes">Schemes</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Dhandapani Rural Charitable Trust. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+project-root/
+│
+├── client/
+│   ├── index.html
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│
+├── server/
+│   ├── server.js
+│   ├── models/
+│   │   └── contact.js
+│   └── routes/
+│       └── contactRoutes.js
+│
+├── .gitignore
+├── package.json
+└── README.md
