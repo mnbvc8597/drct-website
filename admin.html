@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>DRCT Admin</title><link rel="icon" href="assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head><body class="adm">
+<div id="loginBox" hidden><form class="login" id="lf"><img src="assets/logo.png" alt="" onerror="this.style.display='none'"><h2 style="text-align:center">DRCT Admin Login</h2>
+<div class="fld"><label for="em">Email</label><input id="em" type="email" required autocomplete="username"></div>
+<div class="fld"><label for="pw">Password</label><input id="pw" type="password" required autocomplete="current-password"></div>
+<div class="err" id="le" hidden></div><button class="btn" style="width:100%;justify-content:center">Log in</button>
+<p class="mut" style="text-align:center;font-size:.85rem"><a href="index.html">← Back to website</a></p></form></div>
+<div id="appBox" hidden>
+<div class="atop"><div class="wrap"><b><i class="fa-solid fa-lock"></i> DRCT Admin Dashboard</b><span><a class="btn sm gold" href="index.html" target="_blank">View website</a> <button class="btn sm" id="lo">Log out</button></span></div></div>
+<div id="tabs"></div><div class="wrap sec" id="view"></div></div>
+<div class="mo" id="mo" hidden></div><div id="toast"></div>
+<script>window.IS_ADMIN=true</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script><script src="js/common.js"></script><script src="js/admin.js"></script>
+</body></html>
